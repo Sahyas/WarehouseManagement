@@ -1,18 +1,20 @@
 You need Apache Derby 10.14.2.0 and Payara 5.2022.3 installed,
-along with their $HOME environment variables.
+along with their $DERBY_HOME and $PAYARA_HOME environment variables - to their home catalogues.
 
-Make sure you set SDK to java 11.0.17 in project settings.
-Build project using "mvn clean package" command.
-If it does not work in the terminal, try intellij.
+Make sure you set SDK to java 11.0.17 Amazon Corretto in project settings.
+Build project using "mvn clean package" command. Use intellij lifecycles, for proper java version.
 
 In the .idea directory there are runConfigurations for deployment of
-Apache network server and Payara server. Load & start it first.
+Apache network server and Payara server. Load & start "startNetworkServer" first.
 
 Set up connection to remote Apache Derby database. URL: +
 jdbc:derby://localhost:1527/WM;create=true +
- Next initialize database with static structures from createDB.sql script
+Next initialize database with static structures from createDB.sql script
 and populate them with initDB.sql values.
 
-There is also maven exec plugin configured for automatic deployment of database resources (connection pool and JNDI). It needs to be executed after first deployment of Payara server.
+Next run second prepared configuration for deploying Payara server.
+
+There is also maven exec plugin configured for automatic deployment of database resources (connection pool and JNDI). +
+It needs to be executed after first deployment of Payara server.
 
 The last step is to configure the Security realm according to project instructions.

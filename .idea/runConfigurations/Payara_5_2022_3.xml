@@ -2,7 +2,7 @@
   <configuration default="false" name="Payara 5.2022.3" type="PayaraServerConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 5.2022.3" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11" nameIsGenerated="true">
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
-      <artifact name="WM:war">
+      <artifact name="WarehouseMangement:war">
         <settings />
       </artifact>
     </deployment>
@@ -74,10 +74,9 @@
       </SHUTDOWN>
     </ConfigurationWrapper>
     <method v="2">
-      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_connection" />
       <option name="Make" enabled="true" />
       <option name="BuildArtifacts" enabled="true">
-        <artifact name="WM:war" />
+        <artifact name="WarehouseMangement:war" />
       </option>
     </method>
   </configuration>

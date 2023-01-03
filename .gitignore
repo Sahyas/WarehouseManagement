@@ -1,3 +1,6 @@
+WM/
+derby.log
+nohup.out
 target/
 pom.xml.tag
 pom.xml.releaseBackup

@@ -57,7 +57,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <executable>D:\payara5\bin\asadmin.bat</executable>
+                    <executable>${env.PAYARA_HOME}/bin/asadmin</executable>
                     <arguments>
                         <argument>--host=localhost</argument>
                         <argument>--port=4848</argument>
@@ -67,7 +67,7 @@
                         <argument>--terse=true</argument>
                         <argument>add-resources</argument>
                         <argument>--upload=true</argument>
-                        <argument>src\main\webapp\WEB-INF\glassfish-resources.xml</argument>
+                        <argument>src/main/webapp/WEB-INF/glassfish-resources.xml</argument>
                     </arguments>
                 </configuration>
             </plugin>
