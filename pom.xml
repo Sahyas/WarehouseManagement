@@ -56,40 +56,20 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <configuration>
-                            <executable>D:\payara5\bin\asadmin.bat</executable>
-                            <arguments>
-                                <argument>--host=localhost</argument>
-                                <argument>--port=4848</argument>
-                                <argument>--user=admin</argument>
-                                <argument>--interactive=false</argument>
-                                <argument>--echo=true</argument>
-                                <argument>--terse=true</argument>
-                                <argument>add-resources</argument>
-                                <argument>--upload=true</argument>
-                                <argument>src\main\webapp\WEB-INF\glassfish-resources.xml</argument>
-                            </arguments>
-                        </configuration>
-                    </execution>
-<!--                    <execution>-->
-<!--                        <configuration>-->
-<!--                            <executable>D:\ApacheDerby\bin\startNetworkServer.bat</executable>-->
-<!--&lt;!&ndash;                            <arguments>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>&#45;&#45;host=localhost</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>&#45;&#45;port=4848</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>&#45;&#45;user=admin</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>&#45;&#45;interactive=false</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>&#45;&#45;echo=true</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>&#45;&#45;terse=true</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>add-resources</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>&#45;&#45;upload=true</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <argument>src\main\webapp\WEB-INF\glassfish-resources.xml</argument>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </arguments>&ndash;&gt;-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
-                </executions>
+                <configuration>
+                    <executable>D:\payara5\bin\asadmin.bat</executable>
+                    <arguments>
+                        <argument>--host=localhost</argument>
+                        <argument>--port=4848</argument>
+                        <argument>--user=admin</argument>
+                        <argument>--interactive=false</argument>
+                        <argument>--echo=true</argument>
+                        <argument>--terse=true</argument>
+                        <argument>add-resources</argument>
+                        <argument>--upload=true</argument>
+                        <argument>src\main\webapp\WEB-INF\glassfish-resources.xml</argument>
+                    </arguments>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
