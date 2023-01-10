@@ -1,10 +1,3 @@
-/* -
- * Projekt końcowy realizowany w ramach studiów podyplomowych Nowoczesne aplikacje biznesowe Java EE edycja 8
- */
-
-CREATE VIEW AUTHENTICATION_VIEW AS 
-SELECT login, password, level_of_access FROM ACCOUNT WHERE active>0 AND NOT level_of_access  = 'access.level.newregistered';
-
 -- Użytkownicy -- -- hasło dla użytkowników: P@ssw0rd
 INSERT INTO WM.ACCOUNT (ID, LEVEL_OF_ACCESS, ACTIVE, ANSWER, CREATION_DATE, EMAIL, LOGIN, "NAME", PASSWORD, QUESTION, SURNAME, VERSION, AUTHORIZED_BY) 
 VALUES (-1, 'access.level.administration', 1, 'Eva', '2019-07-15 10:00:00', 'davidmitchell@wm.com', 'DMitchell', 'David', 'b03ddf3ca2e714a6548e7495e2a03f5e824eaac9837cd7f159c67b90fb4b7342', 'What is your mother name?', 'Mitchell', 1, -1);

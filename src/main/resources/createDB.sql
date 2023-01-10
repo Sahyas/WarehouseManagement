@@ -1,7 +1,3 @@
-/* -
- * Projekt końcowy realizowany w ramach studiów podyplomowych Nowoczesne aplikacje biznesowe Java EE edycja 8
- */
-
 drop table ISSUE;
 drop table STOCK;
 drop table CONTRACTOR;
@@ -100,6 +96,6 @@ ID VARCHAR(50) PRIMARY KEY,
 VALUE DECIMAL(15,0)
 );
 
-CREATE VIEW AUTHENTICATION_VIEW AS 
+CREATE VIEW AUTHENTICATION_VIEW AS
 SELECT login, password, level_of_access FROM ACCOUNT WHERE active>0 AND NOT level_of_access  = 'access.level.newregistered';
 
