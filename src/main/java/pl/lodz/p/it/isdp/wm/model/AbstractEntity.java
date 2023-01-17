@@ -53,7 +53,6 @@ public abstract class AbstractEntity {
     @Override
     public int hashCode() {
         int hash = 101 * creationDate.hashCode();
-        System.out.println("something");
         return hash;
     }
 
