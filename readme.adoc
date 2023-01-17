@@ -18,5 +18,5 @@ There is also maven exec plugin configured for automatic deployment of database 
 It needs to be executed after first deployment of Payara server.
 
 The last step is to configure the Security realm according to project instructions.
-test
+
 :)
