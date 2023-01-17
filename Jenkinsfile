@@ -13,9 +13,9 @@ pipeline {
         DERBY_RUN_JAR = '/var/lib/jenkins/workspace/apache-derby/lib/derbyrun.jar'
 
         INIT_DB_SCRIPT = '/var/lib/jenkins/workspace/apache-derby/bin/init_db_script.sql'
-        INIT_DB_DATA_SCRIPT = '/var/lib/jenkins/workspace/WarehouseManagement/src/main/resources/initDB.sql'
-        CREATE_DB_STRUCTURE_SCRIPT = '/var/lib/jenkins/workspace/WarehouseManagement/src/main/resources/createDB.sql'
-        LIST_DATA_SCRIPT = '/var/lib/jenkins/workspace/WarehouseManagement/src/main/resources/listDB.sql'
+        INIT_DB_DATA_SCRIPT = './src/main/resources/initDB.sql'
+        CREATE_DB_STRUCTURE_SCRIPT = './src/main/resources/createDB.sql'
+        LIST_DATA_SCRIPT = './src/main/resources/listDB.sql'
 
         EXPECTED_LISTED_DATA = '/var/lib/jenkins/workspace/expected_data'
         ACTUAL_LISTED_DATA = '/var/lib/jenkins/workspace/actual_data'
