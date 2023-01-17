@@ -11,7 +11,6 @@ import pl.lodz.p.it.isdp.wm.exception.AppBaseException;
 @Named(value = "accountControllerBean")
 @SessionScoped
 public class AccountControllerBean implements Serializable {
-
     @EJB
     private AccountEndpoint accountEndpoint;
 
