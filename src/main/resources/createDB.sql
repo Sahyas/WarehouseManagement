@@ -1,3 +1,5 @@
+CONNECT 'jdbc:derby://localhost:1527/WM;user=WM;password=WM';
+
 drop table ISSUE;
 drop table STOCK;
 drop table CONTRACTOR;
